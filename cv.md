@@ -33,4 +33,18 @@ function solution(str){
 }
 ```
 ---
+### Courses:
+
+- JavaScript Manual on [learnjavascript.ru](https://learn.javascript.ru/) (in progress)
+- RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)
+- React&Redux Course on YouTube ["Путь Самурая"](https://www.youtube.com/watch?v=gb7gMluAeao&list=PLcvhF2Wqh7DNVy1OCUpG3i5lyxyBWhGZ8)
+
+---
+
+### Languages:
+
+- English \- Pre-Intermediate 
+- Russian \- Native
+- Belarusian \- Native
+
 
