@@ -2,83 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=yes, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Efim Gutnik | CV</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="highlight/styles/dark.min.css">
+    <script src="highlight/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 <div class="wrapper">
     <header>
-        <div class="photo">
-            <img src="assets/avatar.jpeg" alt="">
+        <div class="header-info">
+            <div class="photo">
+                <img src="assets/avatar.jpeg" alt="avatar">
+            </div>
+            <section class="short-info">
+                <h1>Efim Gutnik</h1>
+                <h3>Future JavaScript Developer</h3>
+                <p>Minsk, Belarus</p>
+            </section>
         </div>
-        <section class="short-info">
-            <h1>Efim Gutnik</h1>
-            <h3>Junior JavaScript Developer</h3>
-            <p>Minsk, Belarus | <a href="#contacts">Contacts</a></p>
-        </section>
+        <nav id="mainNavigation">
+            <ul>
+                <li><a href="#bio">Intro</a></li>
+                <li><a href="#skills">Skills&Tech</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#example">Examples</a></li>
+                <li><a href="#lang">Lang</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <div class="part1">
-            <article class="part1__courses">
-                <h2>Courses</h2>
-                <ul>
-                    <li>JavaScript Manual on <a href="https://learn.javascript.ru/">learn.javascript.ru</a> (in
-                        progress)
-                    </li>
-                    <li>RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)</li>
-                    <li>React&Redux Course on YouTube <a
-                            href="https://www.youtube.com/watch?v=gb7gMluAeao&list=PLcvhF2Wqh7DNVy1OCUpG3i5lyxyBWhGZ8">"Путь
-                        Самурая 1.0"</a></li>
-                </ul>
-            </article>
-            <article class="part1__code">
-                <h2>Code example</h2>
-                <p>Codewars Kata: <a href="https://www.codewars.com/kata/5168bb5dfe9a00b126000018">Reversed Strings</a>
-                </p>
-                <pre><code>function solution(str){
+        <article id="bio">
+            <h2>Introduction</h2>
+            <p>After I graduated, I tried myself as a system administrator. But at this job, it just became clear to me that building application logic is much more interesting than configuring and maintaining the equipment on which this application runs. That's why I continued to study technologies that will help me become a frontend developer by myself.</p>
+            <p>I am sure that it will also be important for you to know that I am quite good as a person. I don't have any common bad habits like alcoholism or smoking. I will note that I really like old cars. This can be a theme for our unofficial communication.</p>
+        </article>
+        <article id="skills">
+            <h2>Skills and Technologies</h2>
+            <ul>
+                <li>HTML, SCC</li>
+                <li>JavaScript Basics</li>
+                <li>Git, GitHub</li>
+                <li>SQL, MySQL</li>
+                <li>WebStorm, VS Code</li>
+                <li>Adobe Photoshop, Figma</li>
+            </ul>
+        </article>
+        <article id="education">
+            <h2>Education</h2>
+            <h4>Belarusian State University of Informatics and Radioelectronics, 2014-2019</h4>
+            <p>Faculty of Computer Systems and Networks,  specialization - Software for Information Technologies</p>
+        </article>
+        <article id="courses">
+            <h2>Courses</h2>
+            <ul>
+                <li>JavaScript Manual on <a href="https://learn.javascript.ru/">learn.javascript.ru</a> (in
+                    progress)
+                </li>
+                <li>RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)</li>
+                <li>React&Redux Course on YouTube <a
+                        href="https://www.youtube.com/watch?v=gb7gMluAeao&list=PLcvhF2Wqh7DNVy1OCUpG3i5lyxyBWhGZ8">"Путь
+                    Самурая 1.0"</a></li>
+            </ul>
+        </article>
+        <article id="example">
+            <h2>Code example</h2>
+            <p>Codewars Kata: <a href="https://www.codewars.com/kata/5168bb5dfe9a00b126000018">Reversed Strings</a>
+            </p>
+            <pre><code>function solution(str){
     return str.split("").reverse().join("");
     }
                 </code></pre>
-            </article>
-        </div>
-        <div class="part2">
-            <article class="part2__contacts" id="contacts">
-                <h2>Contacts</h2>
-                <ul>
-                    <li>Email: <a href="mailto:bylochka96@gmail.com">bylochka96@gmail.com</a></li>
-                    <li>Skype: <a href="skype:pratein911?chat">pratein911</a></li>
-                    <li>Discord: guefi#3444</li>
-                    <li>Telegram: @guefi</li>
-                </ul>
-            </article>
-            <article class="part2__skills-tech">
-                <h2>Skills and Technologies</h2>
-                <ul>
-                    <li>HTML, SCC</li>
-                    <li>JavaScript Basics</li>
-                    <li>Git, GitHUb</li>
-                    <li>SQL, MySQL</li>
-                    <li>WebStorm, VS Code</li>
-                    <li>Adobe Photoshop, Figma</li>
-                </ul>
-            </article>
-            <article class="part2__lang">
-                <h2>Languages</h2>
-                <ul>
-                    <li>English - Pre-Intermediate</li>
-                    <li>Russian - Native</li>
-                    <li>Belarusian - Native</li>
-                </ul>
-            </article>
-        </div>
+        </article>
+        <article id="lang">
+            <h2>Languages</h2>
+            <ul>
+                <li>English - Pre-Intermediate</li>
+                <li>Russian - Native</li>
+                <li>Belarusian - Native</li>
+            </ul>
+        </article>
+        <article id="contacts">
+            <h2>Contacts</h2>
+            <ul>
+                <li>Email: <a href="mailto:bylochka96@gmail.com">bylochka96@gmail.com</a></li>
+                <li>Skype: <a href="skype:pratein911?chat">pratein911</a></li>
+                <li>Discord: guefi#3444</li>
+                <li>Telegram: @guefi</li>
+            </ul>
+        </article>
     </main>
+    <footer>
+        <div class="logo">
+            <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="RS School"></a>
+        </div>
+        <p>© Copyright 2021 by Efim Gutnik | GitHub: <a href="https://github.com/bylochka96">bylochka96</a></p>
+    </footer>
 </div>
-<footer>
-    <div class="logo">
-        <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="RS School"></a>
-    </div>
-    <p>© Copyright 2021 by Efim Gutnik | GitHub: <a href="https://github.com/bylochka96">bylochka96</a></p>
-</footer>
+<script src="myScript.js"></script>
 </body>
 </html>
