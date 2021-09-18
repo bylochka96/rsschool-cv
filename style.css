@@ -60,7 +60,6 @@ header {
 
 .short-info h3 {
     margin-top: 5px;
-
     font-weight: 400;
     font-size: 20px;
     color: #f0bc81;
@@ -72,7 +71,6 @@ header {
     font-size: 12px;
     color: #999999;
 }
-
 
 nav {
     align-content: center;
@@ -100,7 +98,7 @@ main {
     height: 100%;
     margin: 20px auto;
     color: #4a4f5f;
-    font-family: Georgia;
+    font-family: Georgia, serif;
 }
 
 
@@ -110,7 +108,7 @@ main h2 {
     text-align: center;
     color: #4a4f5f;
     background: #d68181;
-    font-family: "Showcard Gothic";
+    font-family: "Showcard Gothic", serif;
     border: 2px solid #666666;
     border-top: none;
 }
