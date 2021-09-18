@@ -1,8 +1,12 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4a4f5f;
     color: #f0bc81;
-    background: #4a4f5f;
 }
 
 a {
@@ -11,43 +15,40 @@ a {
 }
 
 .wrapper {
-    width: 900px;
-    min-height: 200px;
-    margin: 50px auto;
-    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
     background: #fcfbf6;
-    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.6);
 }
 
 header {
-    display: flex;
     width: 100%;
-    height: 200px;
-    margin-bottom: 25px;
+    height: 100%;
     background: #666666;
+    padding: 0 20px;
 }
 
-.logo {
-    width: auto;
-
-}
-
-.logo > a > img {
-    width: 150px;
-    height: auto;
-
+.header-info {
+    margin-bottom: 25px;
 }
 
 .photo {
-    width: 200px;
+    display: inline-block;
+    margin: 25px 0 0 25px;
 }
 
 .photo > img {
     width: 150px;
     height: 150px;
-    margin: 25px;
-    border-radius: 50%;
+    border: 5px solid #fcfbf6;
     object-fit: cover;
+}
+
+.short-info {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 25px 0 0 25px;
 }
 
 .short-info h1 {
@@ -59,7 +60,6 @@ header {
 
 .short-info h3 {
     margin-top: 5px;
-
     font-weight: 400;
     font-size: 20px;
     color: #f0bc81;
@@ -67,60 +67,115 @@ header {
 
 .short-info p {
     margin-top: 5px;
-
     font-weight: 200;
     font-size: 12px;
     color: #999999;
 }
 
-.short-info p a {
-    color: #999999;
-    text-decoration: underline;
+nav {
+    align-content: center;
 }
+
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 24px;
+    margin: 0 1%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fcfbf6;
+}
+
+nav ul {
+    text-align: center;
+}
+
 
 main {
-    display: flex;
     width: 90%;
     height: 100%;
-    padding: 0 20px;
-    justify-content: center;
+    margin: 20px auto;
     color: #4a4f5f;
-    font-family: Georgia;
+    font-family: Georgia, serif;
 }
 
-.part1 {
-    width: 60%;
-    padding-right: 50px;
-}
 
 main h2 {
     width: 60%;
+    margin: 0 auto 20px auto;
     text-align: center;
     color: #4a4f5f;
     background: #d68181;
-    font-family: "Showcard Gothic";
+    font-family: "Showcard Gothic", serif;
+    border: 2px solid #666666;
+    border-top: none;
 }
 
-.part2 h2 {
+main article {
+    margin: 0 auto 20px auto;
     width: 100%;
+    border: 2px solid #666666;
 }
 
-.part1, .part2 {
-    text-align: justify;
+main ul {
+    width: 90%;
+    margin: 0 0 5px 30px;
 }
 
-.part2__skills-tech ul {
-    list-style-type: disc;
+main h4 {
+    width: 95%;
+    margin: 0 0 5px 5px;
+}
+
+main p {
+    margin-left: 5px;
+    text-indent: 25px;
+    hyphens: auto;
+    padding-right: 2px;
+}
+
+pre {
+    padding: 5px;
 }
 
 footer {
-    width: 900px;
+    width: 100%;
+    border-top: 5px dotted #666666;
     margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 16px;
     text-align: center;
     color: black;
 }
 
 footer a {
-    color: #f0bc81;
+    color: #d68181;
+    text-decoration: none;
+}
+
+.logo {
+    width: auto;
+}
+
+.logo > a > img {
+    width: 150px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    main h2 {
+        font-size: 16px;
+        width: 60%;
+    }
+
+    main h4 {
+        font-size: 14px;
+    }
+
+    main p {
+        font-size: 13px;
+    }
 }
